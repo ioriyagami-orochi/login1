@@ -172,54 +172,7 @@ body{
 .container.toggle .welcome-sign-up{ transform:translateX(-100%); }
 
 
-@media (max-width: 860px) {
-  .container {
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-  }
-
-  .container-form,
-  .container-welcome {
-    width: 100%;
-    height: auto;
-    position: relative;
-    transform: none !important;
-    border-radius: 0;
-  }
-
-  .container-form form {
-    padding: 20px;
-  }
-
-  .container-welcome {
-    background-color: #4B0082; /* Mantiene el color llamativo */
-    padding: 30px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .container-welcome .welcome {
-    position: relative;
-    transform: none !important;
-    padding: 0;
-  }
-
-  .container-input {
-    width: 100%;
-    max-width: 300px;
-  }
-
-  .button {
-    width: 100%;
-    max-width: 200px;
-  }
-
-  .welcome-sign-in,
-  .welcome-sign-up {
-    transform: none !important;
-  }
+@media (max-width:860px){
+  .container{ width:95%; height:560px; }
+  .container-input{ width:90%; }
 }
