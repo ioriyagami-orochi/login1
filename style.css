@@ -105,7 +105,7 @@ body{
   cursor:pointer;
   margin-top:10px;
   background-color: #FFD700; /* Dorado brillante */
-  color: #1C1C1C;             /* Negro suave para contraste */
+  color: white;             /* Negro suave para contraste */
 }
 
 
@@ -172,7 +172,45 @@ body{
 .container.toggle .welcome-sign-up{ transform:translateX(-100%); }
 
 
-@media (max-width:860px){
-  .container{ width:95%; height:560px; }
-  .container-input{ width:90%; }
+@media (max-width: 860px) {
+  .container {
+    width: 95%;
+    height: auto;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .container-form,
+  .container-welcome {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: none !important;
+    border-radius: 0;
+  }
+
+  .container-form form {
+    padding: 20px;
+  }
+
+  .container-input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .container-welcome {
+    transform: none;
+    border-radius: 0;
+    background-color: #4B0082; /* Mantiene el color llamativo */
+  }
+
+  .container-welcome .welcome {
+    position: relative;
+    padding: 30px 20px;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 200px;
+  }
 }
